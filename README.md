@@ -20,11 +20,14 @@ db.books.insertMany([
 ```
 
 ## Запрос для поиска полей документов коллекции books по полю title,
+```sh
 db.books.find(
     { title: "string1"}
 )
+```
 
 ## Запрос для редактирования полей: description и authors коллекции books по _id записи.
+```sh
 db.books.updateOne(
     { _id: 1 },
     {
@@ -34,3 +37,4 @@ db.books.updateOne(
         }
     }
 )
+```
