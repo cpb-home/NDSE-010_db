@@ -2,6 +2,7 @@
 NDSE-010_db
 
 ## Запрос(ы) для вставки данных минимум о двух книгах в коллекцию books:
+```sh
 db.books.insertMany([
     {
         _id: 0,
@@ -16,6 +17,7 @@ db.books.insertMany([
         authors: "string2"
     }
 ])
+```
 
 ## Запрос для поиска полей документов коллекции books по полю title,
 db.books.find(
